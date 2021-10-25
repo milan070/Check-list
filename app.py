@@ -42,7 +42,7 @@ def delete(id):
         db.session.commit()
         return redirect("/")
     except:
-        return "This is an Problem while deleting"
+        return "An error occured while deleting"
 
 
 @app.route("/update/<int:id>", methods=["POST", "GET"])
